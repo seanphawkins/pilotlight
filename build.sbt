@@ -4,13 +4,13 @@ version := "0.1"
 
 scalaVersion := "2.13.0"
 
-val akkaVersion = "2.5.23"
+val akkaVersion = "2.5.25"
 
 libraryDependencies ++= Seq(
   "com.typesafe" % "config" % "1.3.4",
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
-  "com.typesafe.akka" %% "akka-http" % "10.1.9",
+  "com.typesafe.akka" %% "akka-http" % "10.1.10",
   "com.github.scopt" %% "scopt" % "+",
   "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-core"   % "0.52.2" % Compile,
   "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-macros" % "0.52.2" % Provided,
