@@ -23,8 +23,8 @@ object pilotlight extends App {
   val parser1 = {
     import builder._
     OParser.sequence(
-      programName("plregister"),
-      head("plregister", "0.1"),
+      programName("pilotlight"),
+      head("pilotlight", "0.1"),
       opt[String]('i', "bridgeip")
         .valueName("<ip address>")
         .action((x, c) => c.copy(bridgeIp = Option(x)))
@@ -93,7 +93,6 @@ object pilotlight extends App {
       }
       hb.close()
     case _ =>
-      println("Illegal arguments")
   }
 
   private def mkRegex(s: String) =
